@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js
+    "></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navBar">
+        <h2 class="logo">HLo</h2>
+        <ul class="paginas">
+            <li><a  href="index.html" class="activo">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class= "mantenerse">
+            <div class="carritoContador">
+                <h3 id="productos">0</h3>
+                <svg id="carrito" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                    <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383L5.93 1.757zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0v-2zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <div class="arriba">
+            <p>Tu Carrito</p>
+            <div id= "cerrarCarrito" class="cerrar">
+                <svg class="boton2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="medio">
+        </div>
+
+
+        <div class="abajo">
+            <p class="mensajeVacio"></p>
+            <button id="boton1" class="boton">Pagar</button>
+            <button id ="vaciarCarrito" class="boton"> Vaciar Carrito</button>
+        </div>
+    </div>
+
+    <main>
+        <section class= "header">
+            <p>Una vida simple.</p>
+            <h3>HLo</h3>
+        </section>
+        <section>
+            <h3 class="contenedorTitulo">Permitenos ser parte de tu confort</h3>
+            <div id= "productoContenedor"></div>
+        </section>
+    </main>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="clase.js"></script>
+<script src="App.js"></script>
+<script src="Stok.js"></script>
+<script src="prueba.js"></script>
+<script src="Productos.js"></script>
+<script src="cart.js"></script>
+</html>
